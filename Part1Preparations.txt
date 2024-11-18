@@ -1,0 +1,34 @@
+### Part 1 Preparations ###
+
+# Set the Working Directory
+setwd('~')
+
+# Install and Load Packages with pacman
+if (!requireNamespace(pacman, quietly = TRUE)) {
+  install.packages(pacman)
+}
+library(pacman)
+
+# Use p_load to install and load multiple packages
+p_load(
+  tidymodels, 
+  caret,
+  pROC,
+  PerformanceAnalytics,
+  flextable,
+  e1071,
+  tidyverse,
+  descr,
+  irtoys,
+  difR,
+  readr,
+  leaps,
+  glmnet,
+  neuralnet,
+  xgboost,
+  keras,
+  ltm
+)
+
+# Set Global Decimal Places
+options(digits = 3)
